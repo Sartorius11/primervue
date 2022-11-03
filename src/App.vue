@@ -1,19 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <MenuComponent/>
+  <hr/>
+   <router-view></router-view>
+
+
+  
+ <!-- <HolaMundo/>
+<HomeComponents/>
+<CineComponents/>
+<MusicaComponents/> -->
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MenuComponent from '././components/MenuComponent.vue';
+
+// import CineComponents from '././components/CineComponent.vue';
+// import HomeComponents from '././components/HomeComponent.vue';
+// import MusicaComponents from '././components/MusicaComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    
+    // HomeComponents,
+ 
+    MenuComponent   // CineComponents,
+    // MusicaComponents
+
   }
 }
 </script>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
